@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Results</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav1">
+            <div class="container">
+                <h1>Plagiarism Checker</h1>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="{{ url_for('detection') }}">Detection</a></li>
+                    <!-- <li><a href="{{ url_for('results') }}">Results</a></li> -->
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <!-- <li><button>Get Started</button></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="intro">
+                <h2>Plagiarism Results</h2>
+                <table>
+                    <tr>
+                        <th>
+                            File name
+                        </th>
+                        <th>
+                            Percentage
+                        </th>
+
+                    </tr>
+                    {%for i in range (len)%}
+                    {%if i > 0%}
+                    <tr>
+                        <td>{{dic[i][0]}}</td>
+                        <td>{{dic[i][1]}}%</td>
+                    </tr>
+                    {%endif%}
+                    {%endfor%}
+                </table>
+            </div>
+            <div class="image">
+                <img src="{{url_for('static',filename='results.png')}}" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

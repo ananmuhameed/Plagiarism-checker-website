@@ -1,0 +1,141 @@
+section{
+    padding: 20px;
+}
+
+nav {
+background-color: #7E57C2;
+overflow: hidden;
+color: white;
+padding-top: 10px;
+padding-left: 20px;
+}
+
+nav .nav1 h1 {
+text-transform: uppercase;
+float: left;
+width: 50%;
+padding-bottom: 5px;
+}
+
+nav .nav1 ul {
+list-style: none;
+
+}
+
+nav .nav1 ul li {
+float: left;
+padding: 10px;
+margin-left: 60px;
+}
+
+.nav1 a {
+    color: white;
+}
+
+.nav1 a:hover {
+    color: #000;
+}
+
+section {
+overflow: hidden;
+background-color: #7E57C2;
+}
+
+section .intro {
+float: left;
+margin-top: 90px;
+}
+
+section .intro h2 {
+color: white;
+font-weight: bold;
+font-size: 40px;
+}
+
+section .intro p {
+color: #afb9cb;
+}
+
+section .image {
+float: right;
+}
+
+section .image img {
+width: 500px;
+height: 500px;
+}
+
+
+
+table{
+    width: 400px;
+    height: 150px;
+    /* border-radius: 2px; */
+    border: 2px solid white;
+    color: white;
+}
+td{
+    border: 2px solid white;
+}
+.image {
+position: relative;
+-webkit-animation: anim 3s linear infinite;
+        animation: anim 3s linear infinite;
+}
+
+@-webkit-keyframes anim {
+0% {
+    top: 0px;
+}
+50% {
+    top: 50px;
+}
+100% {
+    top: 0px;
+}
+}
+
+@keyframes anim {
+0% {
+    top: 0px;
+}
+50% {
+    top: 50px;
+}
+100% {
+    top: 0px;
+}
+}
+
+.aboutus {
+    color: aliceblue;
+    font-size: 20px;
+}
+.files{
+    box-sizing: none;
+    margin: 10px;
+    margin-top: 0px;
+    padding: 30px;
+    width: 270px;
+    height: 40px;
+    background-color: white;
+    border: solid 1px white;
+    
+}
+.files input{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.icon{
+    position: relative;
+    top: 94px;
+    width: 50px;
+    height: 50px;
+    margin-left: 140px;
+}
+
+.submit{
+    margin-left: 120px;
+    width: 100px;
+    height: 35px;
+}

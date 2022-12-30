@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Plagiarism</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav1">
+            <div class="container">
+                <h1>Plagiarism Checker</h1>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="{{ url_for('detection') }}">Detection</a></li>
+                    <!-- <li><a href="{{ url_for('results') }}">Results</a></li> -->
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <!-- <li><button>Get Started</button></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="intro">
+                <h2>Plagiarism Detection System</h2>
+                <p>Plagiarism is presenting someone else's work or ideas as your own, with or without their consent,<br>
+                    by incorporating it into your work without full acknowledgement. All published and unpublished
+                    material, <br>
+                    whether in manuscript, printed or electronic form, is covered under this definition.</p>
+            </div>
+            <div class="image">
+                <img src="{{url_for('static',filename='home.png')}}" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

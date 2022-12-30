@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <nav>
+        <div class="nav1">
+            <div class="container">
+                <h1>Plagiarism Checker</h1>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="{{ url_for('detection') }}">Detection</a></li>
+                    <!-- <li><a href="{{ url_for('results') }}">Results</a></li> -->
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="aboutus">
+        <div class="container">
+            <div class="intro" style="margin-top: 80px;">
+                <h1>About Us</h1>
+                <p> NAMES :<br>
+                    Sohila khaled<br>
+                    Sohila amr<br>
+                    Dai mahmoud<br>
+                    <br><br>
+                    PROGRAM :<br>
+                    Software Engineering <br>
+                </p>
+            </div>
+            <div class="image">
+                <img src="{{url_for('static',filename='About.png')}}" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

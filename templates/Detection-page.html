@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Detection</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav1">
+                <div class="container">
+                    <h1>Plagiarism Checker</h1>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="{{ url_for('detection') }}">Detection</a></li>
+                        <!-- <li><a href="{{ url_for('results') }}">Results</a></li> -->
+                        <li><a href="{{ url_for('about') }}">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section>
+            <div class="container">
+                <div class="intro">
+                    <h2 style="margin-top:0px;">UPLOAD FILE</h2>
+                    <div>
+                        <div>
+                            <form action="/upload" method="POST" enctype="multipart/form-data">
+                                <img src="{{url_for('static',filename='icon.png')}}" class="icon" alt="">
+                                <div>
+                                    <p style="font-size: 20px;">Choose your main file</p>
+                                    <div class="files">
+                                        <input type="file" id="myFile" name="main">
+                                    </div>
+                                </div>
+                                <img src="{{url_for('static',filename='icon.png')}}" class="icon" alt="">
+                                <div>
+                                    <p style="font-size: 20px;">upload one or more files to be detected</p>
+                                    <div class="files">
+                                        <input type="file" id="myFile" name="file" multiple>
+                                    </div>
+                                </div>
+
+                                <input type="submit" class="submit">
+                            </form>
+                        </div>
+                    </div>
+                    <!-- <p style="font-size: 20px;">upload one or more files to be detected</p>
+                    <form action="/upload" method="POST" enctype="multipart/form-data">
+                        <input type="file" id="myFile" name="file" multiple>
+                        <input type="submit">
+                    </form> -->
+                </div>
+                <div class="image">
+                    <img src="{{url_for('static',filename='Upload.png')}}" alt="">
+                </div>
+            </div>
+        </section>
+
+    </header>
+    <!-- <button style="font-size:48px">Button <i class="fa fa-upload"></i></button> -->
+</body>
+
+</html>
